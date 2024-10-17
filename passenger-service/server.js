@@ -7,7 +7,7 @@ const PORT = 3003;
 
 app.use(express.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/passengerdb');
+mongoose.connect('mongodb://mongodb:27017/passengerdb');
 
 const Passenger = mongoose.model('Passenger',{
     pId: String,
